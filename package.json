@@ -1,0 +1,38 @@
+{
+	"name": "hellonick",
+	"version": "0.0.0",
+	"type": "module",
+	"private": true,
+	"main": "src/server.js",
+	"scripts": {
+		"start": "wrangler dev",
+		"ngrok": "ngrok http 8787",
+		"test": "c8 mocha test",
+		"fix": "eslint --fix '**/*.js'",
+		"lint": "eslint '**/*.js'",
+		"register": "node src/register.js",
+		"publish": "wrangler deploy"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@eslint/js": "^9.14.0",
+		"c8": "^10.1.2",
+		"chai": "^5.1.2",
+		"dotenv": "^16.4.5",
+		"eslint": "^9.14.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"globals": "^15.12.0",
+		"mocha": "^10.8.2",
+		"ngrok": "^5.0.0-beta.2",
+		"prettier": "^3.3.3",
+		"sinon": "^19.0.2",
+		"vitest": "2.0.5",
+		"wrangler": "^3.60.3"
+	},
+	"dependencies": {
+		"discord-interactions": "^4.1.0",
+		"itty-router": "^5.0.18"
+	}
+}
